@@ -14,7 +14,9 @@
     <h3 class="h3-padding">To Do List</h3>
   </header>
   <ul class="list-ul">
-    <li ng-repeat="x in item" class="li-padding">{{x}} <span style="margin-left:50px">{{ date | date : 'dd-MM-yy'}}</span><span ng-click="removeItem($index)" style="cursor:pointer;" class="right">x</span></li>
+    <li ng-repeat="x in item" class="li-padding">{{x}} <span style="margin-left:50px">{{ date | date : 'dd-MM-yy'}}</span>
+      <span style="padding:3px;cursor:pointer" ng-click="completeItem($index)">&#10004;</span>
+      <span ng-click="removeItem($index)" style="cursor:pointer;" class="right">x</span></li>
   </ul>
   <div class="container header-light-grey li-padding">
     <div class="list-row" style="margin-top:16px!important">

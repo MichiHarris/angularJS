@@ -13,9 +13,8 @@ app.controller("myCtrl", function($scope) {
     }
     $scope.removeItem = function (x) {
         $scope.errortext = "";    
-        $scope.products.splice(x, 1);
+        $scope.item.splice(x, 1);
     }
 
     $scope.date = new Date();
-    
 });
